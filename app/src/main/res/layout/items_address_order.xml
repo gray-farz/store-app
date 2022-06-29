@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layoutDirection="rtl"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="245dp"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f1eeee"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+             <RadioButton
+                 android:id="@+id/Rb_select"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/Tv_name_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="right"
+                android:fontFamily="@font/iran"
+                tools:text="homeandroid.ir"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner2"
+            android:layout_below="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Tv_ostan_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                tools:text="استان : خراسان شمالی"/>
+
+            <TextView
+                android:id="@+id/Tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                tools:text="شهر : آشخانه"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/liner2"
+            android:fontFamily="@font/iran"
+            tools:text="بجنورد میدان گارگر"/>
+
+
+
+        <TextView
+            android:id="@+id/Tv_phone_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/Tv_address"
+            android:fontFamily="@font/iran"
+            tools:text="شماره تلفن ثابت : 05824162890"/>
+
+
+        <TextView
+            android:id="@+id/Tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/Tv_phone_home"
+            android:fontFamily="@font/iran"
+            tools:text="شماره تماس ضروری : 09306246423"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

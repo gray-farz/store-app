@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".Cart.Cart_activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Im_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close_black"/>
+
+
+            <TextView
+                android:fontFamily="@font/iran"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Im_close"
+                android:text="سبد خرید شما"/>
+
+
+            <ImageView
+                android:id="@+id/Im_cart"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_shop_white"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/Rel_sum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#f4f1f1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جمع کل خرید "
+            android:padding="10dp"
+            android:fontFamily="@font/iran"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#27AE60"/>
+        <TextView
+            android:id="@+id/Tv_price_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            tools:text="۲۳۵۲۶۲۴۶ تومان"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:textColor="#27AE60"/>
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/Rel_sum"
+        android:id="@+id/recyclerview_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/Rel_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/Tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/iran"
+            android:textColor="#34495E"
+            tools:text="سبد خرید شما خالی است!"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/Btn_show_action"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            tools:text="ورد به حساب کاربری"
+            android:padding="5dp"
+            android:textSize="13dp"
+            android:background="#34495E"
+            android:textColor="#fff"
+            android:fontFamily="@font/iran"
+            android:layout_below="@+id/Tv_null"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/Im_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/send_price"
+        android:scaleType="fitXY"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Btn_category"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_btn_category_home"
+    android:textColor="@color/white"
+    android:layout_margin="5dp"
+    android:fontFamily="@font/iran"
+    android:padding="10dp">
+
+</Button>

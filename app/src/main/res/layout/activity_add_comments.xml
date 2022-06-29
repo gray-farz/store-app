@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layoutDirection="rtl"
+        android:background="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Im_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+
+            <TextView
+                android:id="@+id/Tv_title"
+                android:fontFamily="@font/iran"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Im_close"
+                android:text="ثبت امتیاز"/>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/Tv_score_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="ثبت امتیاز برای این محصول"/>
+
+    <ScrollView
+        android:layout_below="@+id/Tv_score_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/liner_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/Tv_score_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/liner_bottom"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="کیفیت محصول"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/liner_possion_0_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <com.example.rezakala.Comments.Custom_Seekbar
+                            android:id="@+id/seekbar_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:maxHeight="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress"
+                            android:thumb="@drawable/domp"
+                            />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/Tv_number_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/iran"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="نوآوری"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/liner_possion_1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <com.example.rezakala.Comments.Custom_Seekbar
+                            android:id="@+id/seekbar_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:maxHeight="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress"
+                            android:thumb="@drawable/domp"
+                            />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/Tv_number_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/iran"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="کیفیت طراحی"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/liner_possion_1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <com.example.rezakala.Comments.Custom_Seekbar
+                            android:id="@+id/seekbar_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:maxHeight="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress"
+                            android:thumb="@drawable/domp"
+                            />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/Tv_number_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/iran"
+                        android:text="0"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/liner_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#cfcece"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Btn_add_scoreback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran"
+            android:layout_weight=".49"
+            android:text="ثبت امتیاز و برگشت"
+            android:textColor="#fff"
+            android:background="#7F8C8D"/>
+
+        <Button
+            android:id="@+id/Btn_score_addcomments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/iran"
+            android:layout_weight=".49"
+            android:textColor="#fff"
+            android:background="#27AE60"
+            android:text="ثبت امتیاز و افزودن نظر"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

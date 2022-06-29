@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Im_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close_black"/>
+
+
+            <TextView
+                android:fontFamily="@font/iran"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Im_close"
+                android:text="مقایسه محصول"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lineer_root"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".49"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/Image_post"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                tools:src="@drawable/icon_fek"/>
+
+            <TextView
+                android:id="@+id/Tv_title"
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                android:textSize="11dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c2c0c0"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".49"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp">
+                <ImageView
+                    android:id="@+id/Im_add"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/Im_screen_add"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/image_add">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/Tv_screen_add"
+                    android:layout_below="@+id/Im_screen_add"
+                    android:layout_width="match_parent"
+                    android:text="افزودن کالا"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/iran"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/Image_remove"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_close_black"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                android:textSize="11dp"
+                android:id="@+id/Tv_add"
+                android:textAlignment="center"
+                tools:text="گوشی سامسونگ نوت ۹ و خیلی پیشرفته"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/lineer_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

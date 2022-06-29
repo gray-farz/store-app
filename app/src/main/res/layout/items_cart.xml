@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_margin="7dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <RelativeLayout
+               android:layout_width="0dp"
+               android:layout_height="150dp"
+               android:layout_weight=".30">
+
+               <ImageView
+                   android:id="@+id/Im_post"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:transitionName="Image_intent" />
+
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight=".70"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/Tv_title_en"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   tools:text="ksdgknsdgknskdgnksdngsdkgn"/>
+
+               <TextView
+                   android:id="@+id/Tv_title_fa"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   tools:text="خانه"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   tools:text="رنگ : آبی"/>
+
+               <TextView
+                   android:id="@+id/Tv_g"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   tools:text="گارانتی"/>
+
+               <TextView
+                   android:id="@+id/Tv_shop"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   tools:text="فروشمنده"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp"
+                       android:text="تعداد"
+                       android:fontFamily="@font/iran"
+                       android:layout_gravity="center"/>
+
+
+                   <Spinner
+                       android:id="@+id/spinner"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center">
+
+                   </Spinner>
+
+
+               </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#e1dada"
+           android:orientation="vertical">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   android:text="قیمت کل"
+                   android:layout_marginTop="5dp"/>
+               <TextView
+                   android:id="@+id/Tv_total_price"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:layout_alignParentLeft="true"
+                   android:fontFamily="@font/iran"
+                   android:layout_marginTop="5dp"
+                   tools:text="234235,23235 تومان"/>
+           </RelativeLayout>
+           <RelativeLayout
+               android:id="@+id/Rel_discount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:textColor="#f50404"
+                   android:fontFamily="@font/iran"
+                   android:text="(-) تخفیف شگفت انگیز :"
+                   android:layout_marginTop="5dp"/>
+               <TextView
+                   android:id="@+id/Tv_price_discount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:textColor="#f50404"
+                   android:layout_alignParentLeft="true"
+                   android:fontFamily="@font/iran"
+                   android:layout_marginTop="5dp"
+                   tools:text="234235,23235 تومان"/>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:fontFamily="@font/iran"
+                   android:text="قیمت نهایی"
+                   android:textColor="#04c748"
+                   android:layout_marginTop="5dp"/>
+               <TextView
+                   android:id="@+id/Tv_final_price"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:layout_alignParentLeft="true"
+                   android:fontFamily="@font/iran"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#04c748"
+                   tools:text="234235,23235 تومان"/>
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/Tv_delete"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:layout_alignParentLeft="true"
+                   android:fontFamily="@font/iran"
+                   android:layout_marginTop="5dp"
+                   android:textColor="#ea0542"
+                   android:text="حذف"/>
+           </RelativeLayout>
+
+
+       </LinearLayout>
+   </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

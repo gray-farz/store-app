@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    tools:context=".Cart.Fragment.Fragment_order"
+    android:orientation="vertical"
+    android:background="#e4e2e2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rel_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/tick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666565"
+            android:text="    ______    "/>
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <ImageView
+                android:id="@+id/Im_change"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/tick"
+                android:scaleType="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="۲"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666565"
+            android:text="    ______    "/>
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_circle_white"
+                android:scaleType="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/iran"
+                android:textSize="15dp"
+                android:textColor="#0d0000"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="۳"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rel_2"
+        android:layout_below="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666565"
+            android:textSize="11dp"
+            android:fontFamily="@font/iran"
+            android:layout_marginLeft="55dp"
+            android:text="ورود به دیجی"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666565"
+            android:textSize="11dp"
+            android:fontFamily="@font/iran"
+            android:layout_marginLeft="60dp"
+            android:text="شیوه ارسال"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666565"
+            android:textSize="11dp"
+            android:paddingLeft="20dp"
+            android:fontFamily="@font/iran"
+            android:text="پرداخت"/>
+
+
+    </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card_offer"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:text="کد تخفیف دارم"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"/>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/sw_exits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".43"
+                        android:textColor="#8e8d8d"
+                        android:textSize="12dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/iran"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e9e7e7"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/Rel_expand_offer"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/ET_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iran"
+                            android:textSize="13dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:hint="کد تخفیف"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/shape_line_color_edittext"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:id="@+id/Tv_save_t"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/ET_offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/iran"
+                            android:layout_marginTop="10dp"
+                            android:text="ثبت کد تخفیف"
+                            android:textColor="#392fed"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Card_2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Card_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/Tv_complte"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:fontFamily="@font/iran"
+                       android:text="جمع کل قابل پرداخت"
+                       android:textColor="#03be54"/>
+                   <TextView
+                       android:id="@+id/Tv_price"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:fontFamily="@font/iran"
+                       android:layout_alignParentLeft="true"
+                       tools:text="۲۰۱,۹۰۰ تومان"
+                       android:textColor="#03be54"/>
+
+                   <TextView
+                       android:layout_below="@+id/Tv_complte"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:fontFamily="@font/iran"
+                       android:text="هزینه ارسال مرسوله ۱" />
+                   <TextView
+                       android:id="@+id/Tv_price_post"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:layout_below="@+id/Tv_price"
+                       android:fontFamily="@font/iran"
+                       android:layout_alignParentLeft="true"
+                       tools:text="ارسال رایگان"
+                      />
+
+               </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardivew"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Card_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran"
+                        android:text="شیوه پرداخت"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_gate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                android:id="@+id/carview_user"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cardivew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Tv_user_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:lineSpacingExtra="15dp"
+                    tools:text="این مرسوله توسط پست و از طریق ارسال پست پیشتاز با ظرفیت اختصصاصی برای دیجی کالا با هزینه ارسال رایگان تحویل داده خواهد شد."/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/Tv_p"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/iran"
+                android:layout_marginRight="11dp"
+                android:layout_below="@+id/carview_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="خلاصه سفارش شما"/>
+
+        <RelativeLayout
+            android:id="@+id/Rel_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/Tv_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/Tv_number_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/iran"
+                android:text="مرسوله ۱ از ۱"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:fontFamily="@font/iran"
+                android:text="ارسال توسط پست"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/Tv_number_product"
+                android:id="@+id/recyclerview_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="4dp"
+                android:layout_marginBottom="70dp"
+                android:layout_below="@+id/Rel_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/iran"
+                    android:padding="10dp"
+                    android:lineSpacingExtra="12dp"
+                    android:text="این مرسوله توسط پست و از طریق ارسال پست پیشتاز با ظرفیت اختصصاصی برای دیجی کالا با هزینه ارسال رایگان تحویل داده خواهد شد."/>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/Send_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/send_price_1"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:layout_margin="2dp">
+
+    <TextView
+        android:id="@+id/Tv_title"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran"
+        android:textSize="11dp"
+        android:layout_marginRight="10dp"
+        tools:text="کیفیت ساخت"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+       <RelativeLayout
+           android:id="@+id/view_1"
+           android:layout_width="wrap_content"
+           android:layout_height="10dp"
+           android:background="#cecaca"
+           android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="#cecaca"/>
+
+        <RelativeLayout
+            android:id="@+id/view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="#cecaca"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/view_4"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="#cecaca"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/view_5"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:background="#cecaca"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

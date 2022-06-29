@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rezakala">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RezaKala"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".More_Product.Compare.Activity_Add_product"
+            android:exported="false" />
+        <activity
+            android:name=".More_Product.Compare.Activity_Compare"
+            android:exported="false" />
+        <activity
+            android:name=".Viewpager_Tablayout_Category.More_Category.Cat_home"
+            android:exported="false" />
+        <activity
+            android:name=".Viewpager_Tablayout_Category.Viewpager_Category"
+            android:exported="false" />
+        <activity
+            android:name=".Cart.Fragment.Send_Order_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Panel.Panel.Main_profile_panel"
+            android:exported="false" />
+        <activity
+            android:name=".Panel.Verfy_Code"
+            android:exported="false" />
+        <activity
+            android:name=".Panel.Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Cart.Cart_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Comments.Add_Comments"
+            android:exported="false" />
+        <activity
+            android:name=".Comments.Activity_Comments"
+            android:exported="false" />
+        <activity
+            android:name=".More_Product.More_Product"
+            android:exported="false" />
+        <activity
+            android:name=".Panel.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
